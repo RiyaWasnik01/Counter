@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div align = "center">
+		<h1>COUNTER</h1>
+		<h3 id = "op"></h3>
+		<button onclick= "increment()">+</button>
+		<button onclick= "reset()">RESET</button>
+		<button onclick= "decrement()">-</button>
+	</div>
+	<script type="text/javascript">
+		let count=0;
+		let op = document.getElementById('op');
+		op.innerHTML=count;
+
+		function increment()
+		{
+			count++;
+			op.innerHTML=count;
+		}
+
+		function reset()
+		{
+			count=0;
+			op.innerHTML=count;
+		}
+
+		function decrement()
+		{
+			if(count>0)
+			{
+				count--
+			}
+			op.innerHTML=count;
+		}
+
+
+
+		
+	</script>
+
+
+</body>
+</html>
